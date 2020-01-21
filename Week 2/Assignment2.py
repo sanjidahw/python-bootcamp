@@ -27,7 +27,16 @@ def find_avg(GPA):
 #print(find_avg(students["GPA"])) #my boyfriend helped me here
 
 #4 Create a function to find the highest number absences of all the students. 
-
+def highest(absences,N):
+	max = absences[0]
+	for i in range(0, N):
+		if absences[i] > max:
+			max = absences[i]
+	return max
+absences = students["Num of absences"]
+N = len(absences)
+ans = highest(absences,N)
+print(ans)
 
 #5 Reset all the student’s number of absences to 0. 
 students.pop("Num of absences")
@@ -40,10 +49,10 @@ for value in students.values():
 
 #6  Say that a new student has joined this small school. 
 #Append this student to the end of every list. 
-list_of_names.append("Fernando")
-list_of_majors.append("EE")
-students["GPA"].append(3.2)
-students["Num of absences"].append(0)
-for value in students.values():
+#list_of_names.append("Fernando")
+#list_of_majors.append("EE")
+#students["GPA"].append(3.2)
+#students["Num of absences"].append(0)
+#for value in students.values():
 	#print(value)
-	pass
+#	pass
