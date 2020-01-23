@@ -49,10 +49,60 @@ for value in students.values():
 
 #6  Say that a new student has joined this small school. 
 #Append this student to the end of every list. 
-list_of_names.append("Fernando")
-list_of_majors.append("EE")
-students["GPA"].append(3.2)
-students["Num of absences"].append(0)
-for value in students.values():
+#list_of_names.append("Fernando")
+#list_of_majors.append("EE")
+#students["GPA"].append(3.2)
+#students["Num of absences"].append(0)
+#for value in students.values():
 	#print(value)
-	pass
+#	pass
+
+# Challenge 1: Write a function that finds the maximum of a list.
+def maximum(a, N): 
+	max = a[0]
+	for i in range(0, N):
+		if a[i] > max:
+			max = a[i]
+	return max
+
+#i dont know this part of the challenge:  If the list is empty, return None. 
+
+a = [1,2,3]  
+N = len(a)
+#print(maximum(a, N))
+pass
+
+# Challenge 2:  Write a function that finds the minimum of a list. 
+def minimum(a, N): 
+	min = a[0]
+	for i in range(0, N):
+		if a[i] < min:
+			min = a[i]
+	return min
+
+#i dont know this part of the challenge:  If the list is empty, return None. 
+
+a = [20,50,100]  
+N = len(a)
+print(minimum(a, N))
+
+# Challenge 3: Write a function that extracts all the numerical digits from a string. 
+#Return these digits as a list of integers. Ifthe string is empty, or does not 
+#contain any numerical digits, return an empty list. 
+
+
+
+
+# Challenge 4: Write a function that takes a list as an input. 
+#Find the sum between the smallest odd number and the largest odd number on that
+# list. Note that the smallest odd number and largest odd number may be the
+#same thing if there is only one odd number in the list.
+#If there are no odd numbers, the output should be 0. 
+
+
+
+
+# Challenge 5: Hacker-rank inspired Challenge – Given five positive integers, 
+#find the minimum and maximum values that can be calculated by summing exactly 
+#four of the five integers. Then put the respective minimum and
+#maximum values into a list. Return this list. 
